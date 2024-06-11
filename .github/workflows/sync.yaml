@@ -22,14 +22,14 @@ jobs:
       
     - name: Copy file and push to copy repository
       env:
-        PAT: ${{ secrets.PAT }}
+        PAT: ${{ secrets.PAT1 }}
       run: |
         # Replace these variables with the paths to your specific files
         ORIGINAL_FILE=individual.txt
         COPY_FILE=copy1.txt
 
         # Clone the copy repository
-        git clone https://${{ secrets.PAT }}@github.com/pbnvinay/copy.git
+        git clone https://${{ secrets.PAT1 }}@github.com/pbnvinay/copy.git
         
         
         # Copy the file from the original repository to the copy repository
